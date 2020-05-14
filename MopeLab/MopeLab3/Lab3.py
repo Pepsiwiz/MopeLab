@@ -1,4 +1,7 @@
 import numpy as np
+import time
+
+start_time = time.process_time()
 
 x1_min = 10
 x1_max = 40
@@ -182,3 +185,6 @@ def main(m, n):
 
 print("\nРівняння регресії --- y = b_0 + b_1 * x1 + b_1 * x2 +b_3 * x3")
 main(m, n)
+
+t = (time.process_time() - start_time)
+print("--- %s seconds ---" % t )
